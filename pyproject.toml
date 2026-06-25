@@ -1,0 +1,23 @@
+[project]
+name = "sqe-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Talha Iftikhar", email = "talhaiftikhar13209@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.108.0",
+    "crewai-tools>=0.38.1",
+    "markdown>=3.7",
+    "streamlit>=1.43.2",
+]
+
+[project.scripts]
+sqe-project = "sqe_project:main"
+chatbot = "sqe_project:main1"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
